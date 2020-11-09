@@ -1,0 +1,10 @@
+{
+  "name": "Math",
+  "label": "Math",
+  "description": "Provides Math actions",
+  "group": "",
+  "artifactName": "",
+  "packageVersion": "",
+  "codeVersion": "",
+  "commands": []
+}

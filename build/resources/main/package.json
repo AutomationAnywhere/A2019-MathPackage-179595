@@ -1,0 +1,52 @@
+{
+    "name": "Math",
+    "label": "Math",
+    "description": "Provides Math actions",
+    "group": "com.automationanywhere",
+    "artifactName": "Math",
+    "packageVersion": "1.0.4-20200807-155303",
+    "codeVersion": "1.0.4-20200807-155303",
+    "commands": [
+        {
+            "name": "mathevaluate",
+            "label": "Math Expression",
+            "description": "Math Expression Parser",
+            "nodeLabel": "Math Expression Parser",
+            "mainClass": "com.automationanywhere.botcommand.sk.ExpressionCommand",
+            "icon": "pkg.svg",
+            "textColor": "#707fb7",
+            "backgroundColor": "#707fb7",
+            "comment": true,
+            "returnType": "STRING",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "Result",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "expression",
+                    "label": "Expression",
+                    "type": "TEXT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "precision",
+                    "label": "Precision",
+                    "type": "NUMBER",
+                    "defaultValue": {
+                        "number": "2",
+                        "type": "NUMBER"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
